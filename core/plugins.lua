@@ -38,15 +38,11 @@ require('packer').startup(function(use)
 	})
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/nvim-cmp'}
-  use {
-	  'williamboman/mason.nvim',
-	  opts = {
-		  ensure_installed = {
-			  "codelldb",
-			  "pyright"
-		  },
-	  }
-  }
+  use {'hrsh7th/cmp-buffer'}
+  use {'hrsh7th/cmp-path'}
+  use {'saadparwaiz1/cmp_luasnip'}
+  use {'williamboman/mason.nvim'}
+  use {'WhoIsSethDaniel/mason-tool-installer.nvim'}
   use {'williamboman/mason-lspconfig.nvim'}
   use {
     "Exafunction/codeium.nvim",
